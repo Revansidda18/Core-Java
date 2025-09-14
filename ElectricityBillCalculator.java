@@ -4,8 +4,6 @@ class ElectricitybillCalculator
     public static void main(String[] args) 
 		{
         Scanner s = new Scanner(System.in);
-
-        
         System.out.print("Enter electricity units consumed: ");
         int units = s.nextInt();
 
@@ -19,7 +17,5 @@ class ElectricitybillCalculator
             bill = 100 * 2 + 200 * 3 + (units - 300) * 5;
         }
 
-        System.out.println("Total Bill: ₹" + bill);
-
-       
+        System.out.println("Total Bill: ₹" + bill);  
     }
