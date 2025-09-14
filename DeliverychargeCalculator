@@ -1,1 +1,32 @@
+import java.util.Scanner;
+class DeliverychargeCalculator {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
 
+        System.out.print("Enter order amount: ₹");
+        double orderAmount = scanner.nextDouble();
+
+        System.out.print("Enter delivery distance (in km): ");
+        double distance = scanner.nextDouble();
+
+        double deliveryCharge = 0;
+		double totalAmount = orderAmount + deliveryCharge;
+
+        if (orderAmount >= 1500) {
+            deliveryCharge = 0; 
+        } else {
+            if (distance <= 3) {
+                deliveryCharge = 20;
+            } else if (distance <= 10) {
+                deliveryCharge = 50;
+            } else {
+                deliveryCharge = 100;
+            }
+        }
+        
+        System.out.println("Delivery Charge: ₹" + deliveryCharge);
+        System.out.println("Total Amount to be Paid: ₹" + totalAmount);
+
+      
+    }
+}
